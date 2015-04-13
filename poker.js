@@ -1,5 +1,6 @@
 var cheatingAllowed = false;
 var pot = 0;
+var winnings = 500;
 var cards = [];//array of all cards
 var deck = [];
 var cpuHand = [];
@@ -108,6 +109,8 @@ function dealFiveEach()
  */
 function updateUI()
 {
+    document.getElementById("pot").innerHTML = pot.toString();
+
     for (var i = 1; i <= 5; i++)
     {
         var elementId = "hum_card".concat(i.toString());
@@ -205,19 +208,23 @@ function clickCpuCard(x){
 }
 
 
-function open(){
-    alert("checks out ok");
+function playeropen(){
+    console.log("the user opens");
+    var bet = prompt("Please enter your bet", 100);
+    if (bet != null)
+        pot += parseInt(bet);
+    updateUI();
 }
 
 
 function check(){
-    alert("checks out ok");
+    console.log("the user checks");
 }
 
 function raise(){
-    alert("checks out ok");
+    console.log("the user raises");
 }
 
 function fold(){
-    alert("checks out ok");
+    console.log("the user folds");
 }

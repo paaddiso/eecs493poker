@@ -13,7 +13,7 @@
 		<script type="text/javascript" src="poker.js"></script>
 
 		<h2>Pot: 
-			<p id="pot"> $0.00 </p>
+			<p id="pot"></p>
 		</h2>
 
 		<!--Buttons-->
@@ -47,10 +47,10 @@
 		<!--Buttons the player can use to play the game-->
 		<table style="width:100%">
 		<tr>
-			<td><button disabled id="openbutton" type="button" onclick="check()" >Open</button></td>
+			<td><button disabled id="openbutton" type="button" onclick="playeropen()" >Open</button></td>
 			<td><button disabled id="checkbutton" type="button" onclick="check()">Check</button></td>
-			<td><button disabled id="raisebutton" type="button" onclick="check()">Raise</button></td>
-			<td><button disabled id="foldbutton" type="button" onclick="check()">Fold</button></td>
+			<td><button disabled id="raisebutton" type="button" onclick="raise()">Raise</button></td>
+			<td><button disabled id="foldbutton" type="button" onclick="fold()">Fold</button></td>
 		</tr>
 		</table>
 
