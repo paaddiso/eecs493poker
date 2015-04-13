@@ -86,7 +86,6 @@ Array.prototype.shuffle = function() {
  */
 function initDeck()
 {
-    var deck = [];
     for (var i = 0; i < 52; i++)
     {
         deck.push(i);
@@ -94,13 +93,8 @@ function initDeck()
     deck.shuffle();
 }
 
-
-/* dealFiveEach()
- * Deals cards to each player until each has five cards 
- */
 function dealFiveEach()
 {
-
     for (var i = 0; i < 10; i++)
     {
         var a = deck.pop();
@@ -108,14 +102,6 @@ function dealFiveEach()
         cpuHand.push(a);
         playerHand.push(b);
     }
-
-    // while(cpuHand.length < 5)
-    //     cpuHand.push(deck.pop());
-
-    // while(playerHand.length < 5)
-    //     playerHand.push(deck.pop());
-
-    return;
 }
 
 /* updateUI()
@@ -149,8 +135,6 @@ function initGame(){
     document.getElementById("cheatbutton").innerHTML = "Turn Cheating On";
     loadCards();
     initDeck();
-    cpuHand = [];
-    playerHand = [];
     dealFiveEach();
     updateUI();
     document.getElementById("cheatbutton").disabled = false;
@@ -235,19 +219,12 @@ function playeropen(){
 
 function check(){
     console.log("the user checks");
-
 }
-/* raise()
- * If someone bets an amount, and you think you have an 
- * outstanding hand, you can put up as much as he did, and 
- * then some. */
+
 function raise(){
     console.log("the user raises");
 }
 
-/* fold()
- * to get out of a hand. You just throw your cards away,
- * and that's it. You can do this at any point in the game. */
 function fold(){
     console.log("the user folds");
 }
