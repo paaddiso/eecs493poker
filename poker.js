@@ -85,7 +85,6 @@ function dealFiveEach()
 
 function updateUI()
 {
-    document.getElementById("hum_card1").src = cards[playerHand];
     for (var i = 1; i <= 5; i++)
     {
         var elementId = "hum_card".concat(i.toString());
@@ -106,9 +105,20 @@ function initGame(){
     alert("a new game has begun!");
 }
 
+function resetCpuCards(){
+    for (var i = 1; i <= 5; i++)
+    {
+        var elementId = "cpu_card".concat(i.toString());
+        var cardNumber = cpuHand[i];
+        cards[cardNumber].flipped = false;
+        document.getElementById(elementId).src = "images/back.jpg";
+    }
+}
+
 function toggleCheating(){
 	if(cheatingAllowed == true)
 	{
+        resetCpuCards();
 		cheatingAllowed = false;
 		document.getElementById("cheatbutton").innerHTML = "Turn Cheating On";
 	}
@@ -142,10 +152,12 @@ function flipCard(elementId, cardNumber)
 function clickCpuCard(x){
     var elementId = "cpu_card".concat(x.toString());
     console.log("you clicked ".concat(elementId.toString()));
-    var cardNumber = cpuHand[x];
-    flipCard(elementId,cardNumber);
+    if(cheatingAllowed)
+    {
+        var cardNumber = cpuHand[x];
+        flipCard(elementId,cardNumber);
+    }
 }
-
 
 
 
