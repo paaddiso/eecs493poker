@@ -66,7 +66,7 @@ function loadCards(){
 
 function initDeck()
 {
-    for (var i = 0; i < 52; i++)
+    for (var i = 0; i < 48; i++)
     {
         deck.push(i);
     }
@@ -76,10 +76,22 @@ function dealFiveEach()
 {
     for (var i = 0; i < 10; i++)
     {
-        //var a = deck.pop();
-        //var b = deck.pop();
-        cpuHand.push(i);
-        playerHand.push(i+2);
+        var a = deck.pop();
+        var b = deck.pop();
+        cpuHand.push(a);
+        playerHand.push(b);
+    }
+}
+
+function updateUI()
+{
+    document.getElementById("hum_card1").src = cards[playerHand];
+    for (var i = 1; i <= 5; i++)
+    {
+        var elementId = "hum_card".concat(i.toString());
+        var cardNumber = playerHand[i];
+        var sourceString = cards[cardNumber].imgpath;
+        document.getElementById(elementId).src = sourceString;
     }
 }
 
@@ -90,6 +102,7 @@ function initGame(){
     loadCards();
     initDeck();
     dealFiveEach();
+    updateUI();
     alert("a new game has begun!");
 }
 
@@ -132,6 +145,7 @@ function clickCpuCard(x){
     var cardNumber = cpuHand[x];
     flipCard(elementId,cardNumber);
 }
+
 
 
 
