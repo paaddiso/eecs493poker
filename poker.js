@@ -76,6 +76,10 @@ Array.prototype.shuffle = function() {
   return this;
 }
 
+/* initDeck()
+ * Initializes the deck by putitng all cards into the deck
+ * and then shuffling the contents randomly. 
+ */
 function initDeck()
 {
     for (var i = 0; i < 48; i++)
