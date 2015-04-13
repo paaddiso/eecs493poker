@@ -19,10 +19,11 @@ function loadCards(){
     cards.push({name:"7 of Clubs", suit:"Clubs", value:7, flipped:false, imgpath:"images/7_of_clubs.png"});
     cards.push({name:"8 of Clubs", suit:"Clubs", value:8, flipped:false, imgpath:"images/8_of_clubs.png"});
     cards.push({name:"9 of Clubs", suit:"Clubs", value:9, flipped:false, imgpath:"images/9_of_clubs.png"});
-    cards.push({name:"Jack of Clubs", suit:"Clubs", value:10, flipped:false, imgpath:"images/jack_of_clubs.png"});
-    cards.push({name:"Queen of Clubs", suit:"Clubs", value:11, flipped:false, imgpath:"images/queen_of_clubs.png"});
-    cards.push({name:"King of Clubs", suit:"Clubs", value:12, flipped:false, imgpath:"images/king_of_clubs.png"});
-    cards.push({name:"Ace of Clubs", suit:"Clubs", value:13, flipped:false, imgpath:"images/ace_of_clubs.png"});
+    cards.push({name:"10 of Clubs", suit:"Clubs", value:10, flipped:false, imgpath:"images/10_of_clubs.png"});
+    cards.push({name:"Jack of Clubs", suit:"Clubs", value:11, flipped:false, imgpath:"images/jack_of_clubs.png"});
+    cards.push({name:"Queen of Clubs", suit:"Clubs", value:12, flipped:false, imgpath:"images/queen_of_clubs.png"});
+    cards.push({name:"King of Clubs", suit:"Clubs", value:13, flipped:false, imgpath:"images/king_of_clubs.png"});
+    cards.push({name:"Ace of Clubs", suit:"Clubs", value:14, flipped:false, imgpath:"images/ace_of_clubs.png"});
 
     cards.push({name:"2 of Diamonds", suit:"Diamonds", value:2, flipped:false, imgpath:"images/2_of_diamonds.png"});
     cards.push({name:"3 of Diamonds", suit:"Diamonds", value:3, flipped:false, imgpath:"images/3_of_diamonds.png"});
@@ -32,10 +33,11 @@ function loadCards(){
     cards.push({name:"7 of Diamonds", suit:"Diamonds", value:7, flipped:false, imgpath:"images/7_of_diamonds.png"});
     cards.push({name:"8 of Diamonds", suit:"Diamonds", value:8, flipped:false, imgpath:"images/8_of_diamonds.png"});
     cards.push({name:"9 of Diamonds", suit:"Diamonds", value:9, flipped:false, imgpath:"images/9_of_diamonds.png"});
-    cards.push({name:"Jack of Diamonds", suit:"Diamonds", value:10, flipped:false, imgpath:"images/jack_of_diamonds.png"});
-    cards.push({name:"Queen of Diamonds", suit:"Diamonds", value:11, flipped:false, imgpath:"images/queen_of_diamonds.png"});
-    cards.push({name:"King of Diamonds", suit:"Diamonds", value:12, flipped:false, imgpath:"images/king_of_diamonds.png"});
-    cards.push({name:"Ace of Diamonds", suit:"Diamonds", value:13, flipped:false, imgpath:"images/ace_of_diamonds.png"});
+    cards.push({name:"10 of Diamonds", suit:"Diamonds", value:10, flipped:false, imgpath:"images/10_of_diamonds.png"});
+    cards.push({name:"Jack of Diamonds", suit:"Diamonds", value:11, flipped:false, imgpath:"images/jack_of_diamonds.png"});
+    cards.push({name:"Queen of Diamonds", suit:"Diamonds", value:12, flipped:false, imgpath:"images/queen_of_diamonds.png"});
+    cards.push({name:"King of Diamonds", suit:"Diamonds", value:13, flipped:false, imgpath:"images/king_of_diamonds.png"});
+    cards.push({name:"Ace of Diamonds", suit:"Diamonds", value:14, flipped:false, imgpath:"images/ace_of_diamonds.png"});
 
     cards.push({name:"2 of Hearts", suit:"Hearts", value:2, flipped:false, imgpath:"images/2_of_hearts.png"});
     cards.push({name:"3 of Hearts", suit:"Hearts", value:3, flipped:false, imgpath:"images/3_of_hearts.png"});
@@ -45,10 +47,11 @@ function loadCards(){
     cards.push({name:"7 of Hearts", suit:"Hearts", value:7, flipped:false, imgpath:"images/7_of_hearts.png"});
     cards.push({name:"8 of Hearts", suit:"Hearts", value:8, flipped:false, imgpath:"images/8_of_hearts.png"});
     cards.push({name:"9 of Hearts", suit:"Hearts", value:9, flipped:false, imgpath:"images/9_of_hearts.png"});
-    cards.push({name:"Jack of Hearts", suit:"Hearts", value:10, flipped:false, imgpath:"images/jack_of_hearts.png"});
-    cards.push({name:"Queen of Hearts", suit:"Hearts", value:11, flipped:false, imgpath:"images/queen_of_hearts.png"});
-    cards.push({name:"King of Hearts", suit:"Hearts", value:12, flipped:false, imgpath:"images/king_of_hearts.png"});
-    cards.push({name:"Ace of Hearts", suit:"Hearts", value:13, flipped:false, imgpath:"images/ace_of_hearts.png"});
+    cards.push({name:"10 of Hearts", suit:"Hearts", value:10, flipped:false, imgpath:"images/10_of_hearts.png"});
+    cards.push({name:"Jack of Hearts", suit:"Hearts", value:11, flipped:false, imgpath:"images/jack_of_hearts.png"});
+    cards.push({name:"Queen of Hearts", suit:"Hearts", value:12, flipped:false, imgpath:"images/queen_of_hearts.png"});
+    cards.push({name:"King of Hearts", suit:"Hearts", value:13, flipped:false, imgpath:"images/king_of_hearts.png"});
+    cards.push({name:"Ace of Hearts", suit:"Hearts", value:14, flipped:false, imgpath:"images/ace_of_hearts.png"});
 
     cards.push({name:"2 of Spades", suit:"Spades", value:2, flipped:false, imgpath:"images/2_of_spades.png"});
     cards.push({name:"3 of Spades", suit:"Spades", value:3, flipped:false, imgpath:"images/3_of_spades.png"});
@@ -58,10 +61,11 @@ function loadCards(){
     cards.push({name:"7 of Spades", suit:"Spades", value:7, flipped:false, imgpath:"images/7_of_spades.png"});
     cards.push({name:"8 of Spades", suit:"Spades", value:8, flipped:false, imgpath:"images/8_of_spades.png"});
     cards.push({name:"9 of Spades", suit:"Spades", value:9, flipped:false, imgpath:"images/9_of_spades.png"});
-    cards.push({name:"Jack of Spades", suit:"Spades", value:10, flipped:false, imgpath:"images/jack_of_spades.png"});
-    cards.push({name:"Queen of Spades", suit:"Spades", value:11, flipped:false, imgpath:"images/queen_of_spades.png"});
-    cards.push({name:"King of Spades", suit:"Spades", value:12, flipped:false, imgpath:"images/king_of_spades.png"});
-    cards.push({name:"Ace of Spades", suit:"Spades", value:13, flipped:false, imgpath:"images/ace_of_spades.png"});
+    cards.push({name:"10 of Spades", suit:"Spades", value:10, flipped:false, imgpath:"images/10_of_spades.png"});
+    cards.push({name:"Jack of Spades", suit:"Spades", value:11, flipped:false, imgpath:"images/jack_of_spades.png"});
+    cards.push({name:"Queen of Spades", suit:"Spades", value:12, flipped:false, imgpath:"images/queen_of_spades.png"});
+    cards.push({name:"King of Spades", suit:"Spades", value:13, flipped:false, imgpath:"images/king_of_spades.png"});
+    cards.push({name:"Ace of Spades", suit:"Spades", value:14, flipped:false, imgpath:"images/ace_of_spades.png"});
 }
 
 Array.prototype.shuffle = function() {
@@ -82,7 +86,7 @@ Array.prototype.shuffle = function() {
  */
 function initDeck()
 {
-    for (var i = 0; i < 48; i++)
+    for (var i = 0; i < 52; i++)
     {
         deck.push(i);
     }
