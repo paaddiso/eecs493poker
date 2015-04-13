@@ -5,9 +5,6 @@ var deck = [];
 var cpuHand = [];
 var playerHand = [];
 
-function check(){
-    alert("checks out ok");
-}
 
 function loadCards(){
     cards = [];//clear the array
@@ -118,6 +115,11 @@ function updateUI()
         var sourceString = cards[cardNumber].imgpath;
         document.getElementById(elementId).src = sourceString;
     }
+
+    document.getElementById("openbutton").disabled = false;
+    document.getElementById("checkbutton").disabled = false;
+    document.getElementById("raisebutton").disabled = false;
+    document.getElementById("foldbutton").disabled = false;
 }
 
 /* initGame()
@@ -132,6 +134,7 @@ function initGame(){
     initDeck();
     dealFiveEach();
     updateUI();
+    document.getElementById("cheatbutton").disabled = false;
     alert("a new game has begun!");
 }
 
@@ -202,5 +205,19 @@ function clickCpuCard(x){
 }
 
 
+function open(){
+    alert("checks out ok");
+}
 
 
+function check(){
+    alert("checks out ok");
+}
+
+function raise(){
+    alert("checks out ok");
+}
+
+function fold(){
+    alert("checks out ok");
+}

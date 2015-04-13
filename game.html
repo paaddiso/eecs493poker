@@ -13,21 +13,14 @@
 		<script type="text/javascript" src="poker.js"></script>
 
 		<h2>Pot: 
-			<p id="demo"> $0.00 </p>
+			<p id="pot"> $0.00 </p>
 		</h2>
 
-		<button type="button" onclick="initGame()">
-			Start New Game!
-		</button>
+		<!--Buttons-->
+		<button type="button" onclick="initGame()">Start New Game!</button>
+		<button disabled id="cheatbutton" type="button" onclick="toggleCheating()">Toggle Cheating</button>
 
-		<button id="cheatbutton" type="button" onclick="toggleCheating()">
-			Toggle
-		</button>
-
-		<button id="checkbutton" type="button" onclick="check()">
-			Check
-		</button>
-
+		<!--Cards for cpu-->
 		<h3>CPU's Hand</h3>
 		<table style="width:100%">
 		<tr>
@@ -39,7 +32,7 @@
 		</tr>
 		</table>
 
-
+		<!--Cards for human player-->
 		<h3>Player Hand</h3>
 		<table style="width:100%">
 		<tr>
@@ -51,6 +44,15 @@
 		</tr>
 		</table>
 		
+		<!--Buttons the player can use to play the game-->
+		<table style="width:100%">
+		<tr>
+			<td><button disabled id="openbutton" type="button" onclick="check()" >Open</button></td>
+			<td><button disabled id="checkbutton" type="button" onclick="check()">Check</button></td>
+			<td><button disabled id="raisebutton" type="button" onclick="check()">Raise</button></td>
+			<td><button disabled id="foldbutton" type="button" onclick="check()">Fold</button></td>
+		</tr>
+		</table>
 
 	</body>
 
