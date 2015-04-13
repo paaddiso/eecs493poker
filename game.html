@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+	    <title>Poker</title>
+	    <link rel="stylesheet" href="css/style.css" />
+	</head>
+
+	<body>
+
+		<h1>Poker Card Game</h1>
+
+		<script type="text/javascript" src="poker.js"></script>
+
+		<h2>Pot: 
+			<p id="demo"> $0.00 </p>
+		</h2>
+
+		<button type="button" onclick="initGame()">
+			Start New Game!
+		</button>
+
+		<button id="cheatbutton" type="button" onclick="toggleCheating()">
+			Toggle
+		</button>
+
+		<button id="checkbutton" type="button" onclick="check()">
+			Check
+		</button>
+
+		<h3>CPU's Hand</h3>
+		<table style="width:100%">
+		<tr>
+			<td><img  id="cpu_card1" onclick="clickCpuCard(1)" src="images/back.jpg" height="108" width="75"></td>
+			<td><img  id="cpu_card2" onclick="clickCpuCard(2)" src="images/back.jpg" height="108" width="75"></td>
+			<td><img  id="cpu_card3" onclick="clickCpuCard(3)" src="images/back.jpg" height="108" width="75"></td>
+			<td><img  id="cpu_card4" onclick="clickCpuCard(4)" src="images/back.jpg" height="108" width="75"></td>
+			<td><img  id="cpu_card5" onclick="clickCpuCard(5)" src="images/back.jpg" height="108" width="75"></td>
+		</tr>
+		</table>
+
+
+		<h3>Player Hand</h3>
+		<table style="width:100%">
+		<tr>
+			<td><img  id="hum_card1" onclick="clickCard()" src="images/back.jpg" height="108" width="75"></td>
+			<td><img  id="hum_card2" onclick="clickCard()" src="images/back.jpg" height="108" width="75"></td>
+			<td><img  id="hum_card3" onclick="clickCard()" src="images/back.jpg" height="108" width="75"></td>
+			<td><img  id="hum_card4" onclick="clickCard()" src="images/back.jpg" height="108" width="75"></td>
+			<td><img  id="hum_card5" onclick="clickCard()" src="images/back.jpg" height="108" width="75"></td>
+		</tr>
+		</table>
+		
+
+	</body>
+
+</html> 
