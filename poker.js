@@ -64,12 +64,25 @@ function loadCards(){
     cards.push({name:"Ace of Spades", suit:"Spades", value:13, flipped:false, imgpath:"images/ace_of_spades.png"});
 }
 
+Array.prototype.shuffle = function() {
+  var i = this.length, j, temp;
+  if ( i == 0 ) return this;
+  while ( --i ) {
+     j = Math.floor( Math.random() * ( i + 1 ) );
+     temp = this[i];
+     this[i] = this[j];
+     this[j] = temp;
+  }
+  return this;
+}
+
 function initDeck()
 {
     for (var i = 0; i < 48; i++)
     {
         deck.push(i);
     }
+    deck.shuffle();
 }
 
 function dealFiveEach()
@@ -105,6 +118,10 @@ function initGame(){
     alert("a new game has begun!");
 }
 
+/* resetCpuCards()
+ * This function conceals all cpu cards. It sets the "flipped"
+ * status of each cpu card to "false" and 
+ */
 function resetCpuCards(){
     for (var i = 1; i <= 5; i++)
     {
@@ -133,6 +150,9 @@ function clickCard(x){
     alert(x);
 }
 
+/* flipCard
+ * This function flips the card. It changes the image source
+ * and the status of the card.*/
 function flipCard(elementId, cardNumber)
 {
     var sourceString;
@@ -149,6 +169,11 @@ function flipCard(elementId, cardNumber)
     document.getElementById(elementId).src = sourceString;
 }
 
+/* clickCpuCard
+ * This function is called when the player clicks on a cpu card.
+ * If checating is enable, the card will be flipped. If not,
+ * nothing happens.
+*/
 function clickCpuCard(x){
     var elementId = "cpu_card".concat(x.toString());
     console.log("you clicked ".concat(elementId.toString()));
