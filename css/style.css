@@ -9,6 +9,10 @@
 	color:white; 
 } 
 
+.roundedButton{
+	border: 2px solid;
+    border-radius: 25px;
+}
 
 html { 
 	background-color: #057D25; 
