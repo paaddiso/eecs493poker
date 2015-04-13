@@ -68,6 +68,8 @@ function loadCards(){
     cards.push({name:"Ace of Spades", suit:"Spades", value:14, flipped:false, imgpath:"images/ace_of_spades.png"});
 }
 
+// shuffle method for Array prototype
+// source: http://stackoverflow.com/questions/2450954/how-to-randomize-shuffle-a-javascript-array
 Array.prototype.shuffle = function() {
   var i = this.length, j, temp;
   if ( i == 0 ) return this;
