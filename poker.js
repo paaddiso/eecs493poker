@@ -100,6 +100,9 @@ function dealFiveEach()
     }
 }
 
+/* updateUI()
+ * Used to "refresh" the user interface
+ */
 function updateUI()
 {
     for (var i = 1; i <= 5; i++)
@@ -111,6 +114,10 @@ function updateUI()
     }
 }
 
+/* initGame()
+ * Used to initialize the game. Make sure that this function is
+ * called before the others in order to get more defined behavior.
+ */
 function initGame(){
     pot = 0;
     cheatingAllowed = false;
